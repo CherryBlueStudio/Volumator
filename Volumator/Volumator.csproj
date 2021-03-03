@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA204836-80F7-4A4F-BAB2-BDD3477EC0CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Volumator</RootNamespace>
+    <AssemblyName>Volumator</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>69755FE4C79A99AC41785991A54EDE8B66C89D1B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Volumator_2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cap.Designer.cs">
+      <DependentUpon>Cap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capsule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capsule.Designer.cs">
+      <DependentUpon>Capsule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conical.Designer.cs">
+      <DependentUpon>Conical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cube.Designer.cs">
+      <DependentUpon>Cube.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cylinder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cylinder.Designer.cs">
+      <DependentUpon>Cylinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ellipsoid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ellipsoid.Designer.cs">
+      <DependentUpon>Ellipsoid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rectangular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rectangular.Designer.cs">
+      <DependentUpon>Rectangular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sphere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sphere.Designer.cs">
+      <DependentUpon>Sphere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cone.Designer.cs">
+      <DependentUpon>Cone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SquarePyramid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SquarePyramid.Designer.cs">
+      <DependentUpon>SquarePyramid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tube.Designer.cs">
+      <DependentUpon>Tube.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cap.resx">
+      <DependentUpon>Cap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capsule.resx">
+      <DependentUpon>Capsule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conical.resx">
+      <DependentUpon>Conical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cube.resx">
+      <DependentUpon>Cube.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cylinder.resx">
+      <DependentUpon>Cylinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ellipsoid.resx">
+      <DependentUpon>Ellipsoid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rectangular.resx">
+      <DependentUpon>Rectangular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sphere.resx">
+      <DependentUpon>Sphere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cone.resx">
+      <DependentUpon>Cone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SquarePyramid.resx">
+      <DependentUpon>SquarePyramid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tube.resx">
+      <DependentUpon>Tube.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Volumator_2_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RectangularTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConeTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConeDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConeFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RectangularDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RectangularFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapsuleTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapsuleDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapsuleFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TubeDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TubeFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TubeTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EllipsoidDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EllipsoidFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EllipsoidTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SphericalCapDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sphericalCapFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SphericalCapTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SquarePyramidDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SquarePyramidFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SquarePyramidTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CubeDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CubeFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CubeTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConicalFrustumDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConicalFrustumFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConicalFrustumTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SphereDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SphereFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SphereTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CylinderDiagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CylinderFormula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CylinderTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiagramBut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormulaBut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
