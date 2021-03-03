@@ -25,3 +25,7 @@ The shape page will show you which measurements you need to enter
 </p>
 
 You can also check the formula for each shape if you prefer to calculate by hand
+
+## License
+
+[GNU](https://www.gnu.org/licenses/license-list.en.html)
