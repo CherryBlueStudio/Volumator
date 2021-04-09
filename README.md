@@ -2,7 +2,7 @@
 A 3D Shape Volume Calculator
 
 ## Installation
-Download the code package and run the volumator.exe file
+Download the code ZIP and run the volumator.exe file
 
 ## Usage
 
